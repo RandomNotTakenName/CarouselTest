@@ -26,6 +26,6 @@ background-color: lime;
 }
 
 .image {
-    display: block;
+    display: inline-block;
     width: 50%;
 }
