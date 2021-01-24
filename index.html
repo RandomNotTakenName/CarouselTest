@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script>
+        var number = 1;
+        function carouselPlus() {
+            number++;
+            if (number > 5) {
+                number = 1;
+            } 
+            document.getElementById('CarIm').src = "img" + number + ".jpg";
+        }
+        function carouselMinus() {
+            number--;
+            if (number < 1) {
+                number = 5;
+            } 
+            document.getElementById('CarIm').src = "img" + number + ".jpg";
+        }
+    </script>
+    <title>Test</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class='buttonLeft' onclick="carouselMinus()">
+
+        </div>
+        <div class='buttonRight' onclick="carouselPlus()">
+
+        </div>
+        <img src="img1.jpg" alt="image" class="image" id="CarIm">
+    </div>
+</body>
+
+</html>
