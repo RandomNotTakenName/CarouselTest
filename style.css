@@ -12,21 +12,18 @@ background-color: lime;
     background-color: red;
     margin: 10px;
     min-height: 580px;
-    min-width: 100px;
-    top: 50%;
-    transform: translate(0, -50%);
+    width: 20%;
 }
 
 .buttonRight {
     background-color: red;
-    float: right;
     margin: 10px;
     min-height: 580px;
-    min-width: 100px;
+    width: 20%;
 }
 
 .image {
-    display: block;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
