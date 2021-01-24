@@ -3,6 +3,7 @@ background-color: lime;
 }
 
 .content {
+    width: 100%;
     height: max-content;
 }
 
