@@ -19,7 +19,8 @@ background-color: lime;
 .buttonLeft, 
 .buttonRight {
     position: absolute;
-    background-color: red;
+    background-color: transparent;
+    color: white;
     float: left;
     margin: 10px;
     height: 1060px;
