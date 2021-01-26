@@ -23,11 +23,11 @@ background-color: lime;
     color: white;
     float: left;
     margin: 10px;
-    height: 1060px;
+    height: 100vh;
     width: 20%;
     font-size: 10em;
     text-align: center;
-    padding-top: calc(530px - 5rem);
+    padding-top: calc(50vh - 5rem);
 }
 
 .buttonRight {
