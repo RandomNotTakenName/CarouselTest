@@ -14,13 +14,11 @@ background-color: lime;
     height: 95vh;
 }
 
-
-
 .buttonLeft, 
 .buttonRight {
     position: absolute;
     background-color: transparent;
-    color: white;
+    color: gray;
     float: left;
     margin: 10px;
     height: inherit;
@@ -59,4 +57,13 @@ li {
 
 ul {
     text-align: center;
+}
+
+li:hover {
+    border-color: white;
+}
+
+.buttonLeft:hover, 
+.buttonRight:hover {
+    color: white;
 }
