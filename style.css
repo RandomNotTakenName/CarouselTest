@@ -28,6 +28,7 @@ background-color: lime;
     font-size: 10em;
     text-align: center;
     padding-top: 50vh;
+    object-fit: cover;
 }
 
 .buttonRight {
