@@ -29,6 +29,7 @@ background-color: lime;
     text-align: center;
     padding-top: 50vh;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .buttonRight {
