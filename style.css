@@ -25,7 +25,7 @@ background-color: lime;
     margin: 10px;
     height: inherit;
     width: 20%;
-    font-size: 15em;
+    font-size: 15vh;
     text-align: center;
     padding-top: 50vh;
     cursor:pointer;
@@ -50,7 +50,8 @@ background-color: lime;
 
 li {
     margin: 0vh 2vw 0vh 2vw;
-    border: 20px solid gray;
+    border: 1vh solid gray;
+    font-size: 1vh;
     border-radius: 10px;
     display: inline;
     position: relative;
