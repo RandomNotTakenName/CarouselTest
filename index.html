@@ -11,15 +11,30 @@
             number++;
             if (number > 5) {
                 number = 1;
-            } 
+            }
             document.getElementById('CarIm').src = "img" + number + ".jpg";
         }
         function carouselMinus() {
             number--;
             if (number < 1) {
                 number = 5;
-            } 
+            }
             document.getElementById('CarIm').src = "img" + number + ".jpg";
+        }
+        function clickChange1() {
+            document.getElementById('CarIm').src = "img1.jpg";
+        }
+        function clickChange2() {
+            document.getElementById('CarIm').src = "img2.jpg";
+        }
+        function clickChange3() {
+            document.getElementById('CarIm').src = "img3.jpg";
+        }
+        function clickChange4() {
+            document.getElementById('CarIm').src = "img4.jpg";
+        }
+        function clickChange5() {
+            document.getElementById('CarIm').src = "img5.jpg";
         }
     </script>
     <title>Test</title>
@@ -28,12 +43,21 @@
 <body>
     <div class="content">
         <div class='buttonLeft' onclick="carouselMinus()">
-        <p>&lt</p>
+            <p>&lt</p>
         </div>
         <div class='buttonRight' onclick="carouselPlus()">
-        <p>&gt</p>
+            <p>&gt</p>
         </div>
         <img src="img1.jpg" alt="image" class="image" id="CarIm">
+        <div class="click">
+            <ul>
+                <li onclick="clickChange1()"></li>
+                <li onclick="clickChange2()"></li>
+                <li onclick="clickChange3()"></li>
+                <li onclick="clickChange4()"></li>
+                <li onclick="clickChange5()"></li>
+            </ul>
+        </div>
     </div>
 </body>
 
