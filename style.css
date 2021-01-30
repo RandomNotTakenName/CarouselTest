@@ -19,8 +19,7 @@ body {
     z-index: 1;
     position: absolute;
     background-color: transparent;
-    color: gray;
-    float: left;
+    color: red;
     margin-top: 45vh;
     height: 10vh;
     width: 20vw;
@@ -32,6 +31,12 @@ body {
 
 .buttonRight {
     right: 0;
+    margin-right: 3vw;
+}
+
+.buttonLeft {
+    left: 0;
+    margin-left: 3vw;
 }
 
 .image {
@@ -70,6 +75,6 @@ li:hover {
 
 .buttonLeft:hover, 
 .buttonRight:hover {
-    color: white;
+    color: yellow;
     font-size: 20vh;
 }
