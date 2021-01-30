@@ -63,7 +63,7 @@ ul {
 }
 
 li:hover {
-    border-width: 2vh; 
+    border-width: 1.5vh; 
     border-color: white;
     background-color: white;
 }
