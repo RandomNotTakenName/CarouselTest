@@ -6,27 +6,28 @@
 }
 
 body {
-background-color: lime;
+    background-image: linear-gradient(to bottom, #f15b5b, #38d445);
 }
 
 .content {
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
 }
 
 .buttonLeft, 
 .buttonRight {
+    z-index: 1;
     position: absolute;
     background-color: transparent;
     color: gray;
     float: left;
-    margin: 10px;
-    height: inherit;
-    width: 20%;
+    margin-top: 45vh;
+    height: 10vh;
+    width: 20vw;
     font-size: 15vh;
     text-align: center;
-    padding-top: 40vh;
     cursor:pointer;
+    transition: color 1s, font-size 1s;
 }
 
 .buttonRight {
@@ -53,6 +54,8 @@ li {
     border-radius: 10px;
     display: inline;
     position: relative;
+    background-color: gray;
+    transition: border-color 1s, background-color 1s, border-width 1s;
 }
 
 ul {
@@ -60,10 +63,13 @@ ul {
 }
 
 li:hover {
+    border-width: 2vh; 
     border-color: white;
+    background-color: white;
 }
 
 .buttonLeft:hover, 
 .buttonRight:hover {
     color: white;
+    font-size: 20vh;
 }
