@@ -23,18 +23,31 @@
         }
         function clickChange1() {
             document.getElementById('CarIm').src = "img1.jpg";
+            /*let start1 = setTimeout(() => clickChange1(), 20000);
+                let timer1 = setInterval(() => clickChange1(), 20000);*/
         }
         function clickChange2() {
             document.getElementById('CarIm').src = "img2.jpg";
+            /* let start2 = setTimeout(() => clickChange2(), 4000);
+            let timer2 = setInterval(() => clickChange2(), 20000); */
         }
         function clickChange3() {
             document.getElementById('CarIm').src = "img3.jpg";
+            /* let start3 = setTimeout(() => clickChange3(), 8000);
+            let timer3 = setInterval(() => clickChange3(), 20000); */
         }
         function clickChange4() {
             document.getElementById('CarIm').src = "img4.jpg";
+            /* let start4 = setTimeout(() => clickChange4(), 12000);
+            let timer4 = setInterval(() => clickChange4(), 20000); */
         }
         function clickChange5() {
             document.getElementById('CarIm').src = "img5.jpg";
+            /* let start5 = setTimeout(() => clickChange5(), 16000);
+            let timer5 = setInterval(() => clickChange5(), 20000); */
+        }
+        function styleChange() {
+            document.body.classList.toggle("darkStyle")
         }
     </script>
     <title>Test</title>
@@ -42,6 +55,7 @@
 
 <body>
     <div class="content">
+        <div class="styleButton" onclick="styleChange()">Сменить<br>режим</div>
         <div class='buttonLeft' onclick="carouselMinus()">
             <p>&lt</p>
         </div>
@@ -59,6 +73,8 @@
             </ul>
         </div>
     </div>
+    <script>
+    </script>
 </body>
 
 </html>
