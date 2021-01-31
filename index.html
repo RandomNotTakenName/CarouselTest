@@ -7,12 +7,15 @@
     <link href="style.css" rel="stylesheet">
     <script>
         var number = 1;
+        var timer = setInterval(autoChange, 5000);
         function carouselPlus() {
             number++;
             if (number > 5) {
                 number = 1;
             }
             document.getElementById('CarIm').src = "img" + number + ".jpg";
+            clearInterval(timer);
+            timer = setInterval(autoChange, 5000);
         }
         function carouselMinus() {
             number--;
@@ -20,37 +23,51 @@
                 number = 5;
             }
             document.getElementById('CarIm').src = "img" + number + ".jpg";
+            clearInterval(timer);
+            timer = setInterval(autoChange, 5000);
         }
         function clickChange1() {
             document.getElementById('CarIm').src = "img1.jpg";
+            number = 1;
+            clearInterval(timer);
+            timer = setInterval(autoChange, 5000);
         }
         function clickChange2() {
             document.getElementById('CarIm').src = "img2.jpg";
+            number = 2;
+            clearInterval(timer);
+            timer = setInterval(autoChange, 5000);
         }
         function clickChange3() {
             document.getElementById('CarIm').src = "img3.jpg";
+            number = 3;
+            clearInterval(timer);
+            timer = setInterval(autoChange, 5000);
         }
         function clickChange4() {
             document.getElementById('CarIm').src = "img4.jpg";
+            number = 4;
+            clearInterval(timer);
+            timer = setInterval(autoChange, 5000);
         }
         function clickChange5() {
             document.getElementById('CarIm').src = "img5.jpg";
+            number = 5;
+            clearInterval(timer);
+            timer = setInterval(autoChange, 5000);
         }
         function styleChange() {
             document.body.classList.toggle("darkStyle");
         }
         function autoChange() {
-            let source = document.getElementById("CarIm").src;
-            let autoNumber = source.substr([source.length-5], 1);
-            let timer = setInterval(() => {
+            let autoNumber = number;
             autoNumber++;
             if (autoNumber > 5) {
                 autoNumber = 1;
             }
             document.getElementById('CarIm').src = "img" + autoNumber + ".jpg";
-            }, 5000);
+            number = autoNumber;
         }
-            let start = setTimeout(autoChange, 1000);
     </script>
     <title>Test</title>
 </head>
