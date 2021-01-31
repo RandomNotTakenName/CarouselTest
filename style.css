@@ -7,6 +7,7 @@
 
 body {
     background-image: linear-gradient(to bottom, #f15b5b, #ebb236, #38d445);
+    background-repeat: norepeat;
 }
 
 .content {
@@ -22,7 +23,7 @@ body {
     color: red;
     margin-top: 45vh;
     height: 10vh;
-    width: 20vw;
+    width: 10vw;
     font-size: 15vh;
     text-align: center;
     cursor:pointer;
@@ -31,12 +32,12 @@ body {
 
 .buttonRight {
     right: 0;
-    margin-right: 3vw;
+    margin-right: 10vw;
 }
 
 .buttonLeft {
     left: 0;
-    margin-left: 3vw;
+    margin-left: 10vw;
 }
 
 .image {
@@ -77,4 +78,21 @@ li:hover {
 .buttonRight:hover {
     color: yellow;
     font-size: 20vh;
+}
+
+.styleButton {
+    position: absolute;
+    background-image: linear-gradient(to right, red, green);
+    width:11vh;
+    height:6.5vh;
+    margin: 4vh 7vh 4vh 4vh;
+    right: 0;
+    z-index: 2;
+    border: 0.5vh solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.darkStyle {
+    background-image: linear-gradient(to bottom, #421414, #503d13, #144b19);
 }
